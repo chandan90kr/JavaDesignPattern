@@ -8,6 +8,8 @@ import ObserverPattern.Observer.NotificationAlertObserver;
 
 public class Store {
     public static void main(String[] args) {
+
+        //Orchestration for observer pattern by implementation of notification of product
         StocksObservable iphoneStocksObservable = new IphoneObservableImpl();
 
         NotificationAlertObserver notificationAlertObserver1 = new EmailAlertObserverImpl("ck@gmail.com",iphoneStocksObservable);
